@@ -1,0 +1,6 @@
+{
+  "name": "HBP | Luxury Health & Beauty",
+  "description": "Premium Korean-inspired ecommerce experience for HBP skincare, featuring high-potency rituals, AI consultations, and a cinematic shopping interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
