@@ -1,18 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { CartProvider } from "./context/CartContext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Checkout from "./pages/Checkout";
+function Home() {
+  return <h1>Home Page</h1>;
+}
+
+function Login() {
+  return <h1>Login Page</h1>;
+}
+
+function Admin() {
+  return <h1>Admin Page</h1>;
+}
 
 export default function App() {
   return (
-    <CartProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/checkout" element={<Checkout />} />
-        </Routes>
-      </Router>
-    </CartProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
